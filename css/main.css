@@ -1,0 +1,30 @@
+:root {
+	--black: #030102;
+	--grey: #9ea8bd;
+	--grey2: #e2e6ee;
+	--primary: #ca097a;
+	--white: #ffffff;
+	--bg: #08003b;
+	--fontBase: 'Roboto', sans-serif;
+	--heading: 700 1.25rem / 1.465rem var(--fontBase);
+	--textRegular1: 400 1rem / 1.1719rem var(--fontBase);
+	--textRegular2: 300 0.75rem / normal var(--fontBase);
+	--button: 400 0.875rem/1.0256rem var(--fontBase);
+}
+
+.body {
+	background-color: var(--bg);
+	font: var(--textRegular1);
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	block-size: 100vh;
+	min-inline-size: 360px;
+	color: var(--black);
+}
+
+.wrapper {
+	padding-inline-end: 1rem;
+	padding-inline-start: 1rem;
+}

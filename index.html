@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Pay form</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/form.css" />
+		<link rel="stylesheet" href="./css/fieldset.css" />
+	</head>
+	<body class="body">
+		<div class="wrapper">
+			<form class="form">
+				<figure class="form-logo">
+					<img src="./assets/images/logo.png" alt="Logo de Leonidas Esteban" />
+				</figure>
+				<fieldset class="form-content">
+					<legend class="form-title">Información de pago</legend>
+					<div class="fieldset">
+						<div class="fieldset-field">
+							<label for="name">Full Name</label>
+							<input
+								id="name"
+								type="text"
+								placeholder="Andres Valdivia"
+								autocomplete="off"
+								required
+							/>
+						</div>
+						<div class="fieldset-field">
+							<label for="card">Número de Tarjeta de Crédito</label>
+							<input
+								id="card"
+								type="text"
+								placeholder="1234 1234 1234 1234"
+								autocomplete="cc-number"
+								spellcheck="false"
+								inputmode="numeric"
+								aria-label="Número de tarjeta de crédito"
+								required
+								disabled
+							/>
+						</div>
+						<div class="fieldset-subset">
+							<div class="fieldset-field">
+								<label for="date">Fecha vencimiento</label>
+								<input
+									id="date"
+									type="text"
+									placeholder="MM/YY"
+									autocomplete="off"
+									required
+								/>
+							</div>
+							<div class="fieldset-field">
+								<label for="cvv">CVV</label>
+								<span>
+									<input
+										id="cvv"
+										type="text"
+										placeholder="•••"
+										autocomplete="off"
+										required
+									/>
+								</span>
+							</div>
+						</div>
+						<div class="fieldset-field">
+							<label for="addr">Dirección</label>
+							<input
+								id="addr"
+								type="text"
+								placeholder="Av. Morelos #123"
+								autocomplete="off"
+								required
+							/>
+						</div>
+					</div>
+					<input class="form-submit" type="submit" value="Confirmar pago" />
+				</fieldset>
+				<p class="form-advice">Verificas que esta información es correcta</p>
+			</form>
+		</div>
+	</body>
+</html>

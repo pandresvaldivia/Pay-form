@@ -1,0 +1,48 @@
+.form {
+	background: var(--white);
+	padding: 1.875rem;
+	border-radius: 1.25rem;
+	-webkit-border-radius: 1.25rem;
+	-moz-border-radius: 1.25rem;
+	-ms-border-radius: 1.25rem;
+	-o-border-radius: 1.25rem;
+	text-align: center;
+	max-inline-size: 20.5rem;
+	box-sizing: border-box;
+}
+
+.form-logo {
+	margin: 0;
+	margin-block-end: 0.5rem;
+}
+
+.form-title {
+	font: var(--heading);
+	margin-block-end: 1.5rem;
+}
+
+.form-content {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.form-submit {
+	background: var(--primary);
+	font: var(--button);
+	color: var(--white);
+	inline-size: 100%;
+	padding-block-end: 0.75rem;
+	padding-block-start: 0.75rem;
+	border: none;
+	border-radius: 0.625rem;
+	-webkit-border-radius: 0.625rem;
+	-moz-border-radius: 0.625rem;
+	-ms-border-radius: 0.625rem;
+	-o-border-radius: 0.625rem;
+	cursor: pointer;
+}
+
+.form-advice {
+	font: var(--textRegular2);
+}
