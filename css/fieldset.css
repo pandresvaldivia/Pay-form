@@ -6,42 +6,43 @@
 }
 
 .fieldset-field {
+	align-items: flex-start;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	flex: 1;
+	gap: 0.625rem;
 	min-inline-size: 0;
 	text-align: left;
-	gap: 0.625rem;
 }
 
 .fieldset-field label {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
 	inline-size: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .fieldset-field input {
-	padding-inline-end: 0.75rem;
-	padding-inline-start: 0.75rem;
+	background: var(--grey2);
+	border-radius: 0.625rem;
+	border: 1px solid var(--grey2);
+	box-sizing: border-box;
+	font: var(--textRegular1);
+	inline-size: 100%;
+	outline: none;
 	padding-block-end: 0.6563rem;
 	padding-block-start: 0.6563rem;
-	border: 1px solid var(--grey2);
-	border-radius: 0.625rem;
-	-webkit-border-radius: 0.625rem;
+	padding-inline-end: 0.75rem;
+	padding-inline-start: 0.75rem;
 	-moz-border-radius: 0.625rem;
 	-ms-border-radius: 0.625rem;
 	-o-border-radius: 0.625rem;
-	inline-size: 100%;
-	box-sizing: border-box;
-	font: var(--textRegular1);
-	background: var(--grey2);
-	outline: none;
+	-webkit-border-radius: 0.625rem;
 }
 
 .fieldset-field input:focus-within {
-	box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
 	background: var(--white);
+	box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
 }
 
 .fieldset-field input.is-completed {
@@ -64,8 +65,8 @@
 }
 
 .fieldset-fieldIcon {
-	position: relative;
 	inline-size: 100%;
+	position: relative;
 }
 
 .fieldset-fieldIcon input {
@@ -73,8 +74,8 @@
 }
 
 .fieldset-fieldIcon svg {
+	block-size: 0.875rem;
 	position: absolute;
 	right: 0.8125rem;
 	top: calc(50% - 0.4375rem);
-	block-size: 0.875rem;
 }
