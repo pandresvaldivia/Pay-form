@@ -43,6 +43,11 @@
 	cursor: pointer;
 }
 
+.form-submit:disabled {
+	opacity: 0.2;
+	cursor: not-allowed;
+}
+
 .form-advice {
 	font: var(--textRegular2);
 }

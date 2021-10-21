@@ -35,22 +35,46 @@
 	inline-size: 100%;
 	box-sizing: border-box;
 	font: var(--textRegular1);
+	background: var(--grey2);
+	outline: none;
 }
 
 .fieldset-field input:focus-within {
 	box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+	background: var(--white);
 }
 
-.fieldset-field input:disabled {
-	background: var(--grey2);
-	color: var(--grey);
+.fieldset-field input.is-completed {
+	background: var(--white);
+	border-color: var(--grey2);
 }
 
-.fieldset-field input:disabled::-webkit-input-placeholder {
+.fieldset-field input.is-wrong {
+	background: var(--white);
+	border-color: var(--primary);
+}
+
+.fieldset-field input::-webkit-input-placeholder {
 	color: var(--grey);
 }
 
 .fieldset-subset {
 	display: flex;
 	gap: 0.75rem;
+}
+
+.fieldset-fieldIcon {
+	position: relative;
+	inline-size: 100%;
+}
+
+.fieldset-fieldIcon input {
+	padding-inline-end: 1.875rem;
+}
+
+.fieldset-fieldIcon svg {
+	position: absolute;
+	right: 0.8125rem;
+	top: calc(50% - 0.4375rem);
+	block-size: 0.875rem;
 }

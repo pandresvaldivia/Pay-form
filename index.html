@@ -38,17 +38,47 @@
 						</div>
 						<div class="fieldset-field">
 							<label for="card">Número de Tarjeta de Crédito</label>
-							<input
-								id="card"
-								type="text"
-								placeholder="1234 1234 1234 1234"
-								autocomplete="cc-number"
-								spellcheck="false"
-								inputmode="numeric"
-								aria-label="Número de tarjeta de crédito"
-								required
-								disabled
-							/>
+							<span class="fieldset-fieldIcon">
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g clip-path="url(#clip0_114:67)">
+										<path
+											d="M12.25 2.33331H1.74999C1.10566 2.33331 0.583328 2.85565 0.583328 3.49998V10.5C0.583328 11.1443 1.10566 11.6666 1.74999 11.6666H12.25C12.8943 11.6666 13.4167 11.1443 13.4167 10.5V3.49998C13.4167 2.85565 12.8943 2.33331 12.25 2.33331Z"
+											stroke="#9EA8BD"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M0.583328 5.83331H13.4167"
+											stroke="#9EA8BD"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</g>
+									<defs>
+										<clipPath id="clip0_114:67">
+											<rect width="14" height="14" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+								<input
+									id="card"
+									type="text"
+									placeholder="1234 1234 1234 1234"
+									autocomplete="cc-number"
+									spellcheck="false"
+									inputmode="numeric"
+									aria-label="Número de tarjeta de crédito"
+									required
+								/>
+							</span>
 						</div>
 						<div class="fieldset-subset">
 							<div class="fieldset-field">
@@ -63,7 +93,61 @@
 							</div>
 							<div class="fieldset-field">
 								<label for="cvv">CVV</label>
-								<span>
+								<span class="fieldset-fieldIcon">
+									<svg
+										width="14"
+										height="14"
+										viewBox="0 0 14 14"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M7.00002 12.8334C10.2217 12.8334 12.8334 10.2217 12.8334 7.00002C12.8334 3.77836 10.2217 1.16669 7.00002 1.16669C3.77836 1.16669 1.16669 3.77836 1.16669 7.00002C1.16669 10.2217 3.77836 12.8334 7.00002 12.8334Z"
+											fill="#BCC3D1"
+											stroke="#BCC3D1"
+											stroke-width="1.8"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M7 9.33333V7"
+											stroke="url(#paint0_linear_114:9)"
+											stroke-width="1.8"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M7 4.66669H7.00583"
+											stroke="url(#paint1_linear_114:9)"
+											stroke-width="1.8"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<defs>
+											<linearGradient
+												id="paint0_linear_114:9"
+												x1="7.5"
+												y1="7"
+												x2="7.5"
+												y2="9.33333"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="white" />
+												<stop offset="1" stop-color="white" stop-opacity="0" />
+											</linearGradient>
+											<linearGradient
+												id="paint1_linear_114:9"
+												x1="7.00292"
+												y1="4.66669"
+												x2="7.00292"
+												y2="5.66669"
+												gradientUnits="userSpaceOnUse"
+											>
+												<stop stop-color="white" />
+												<stop offset="1" stop-color="white" stop-opacity="0" />
+											</linearGradient>
+										</defs>
+									</svg>
 									<input
 										id="cvv"
 										type="text"
@@ -85,10 +169,16 @@
 							/>
 						</div>
 					</div>
-					<input class="form-submit" type="submit" value="Confirmar pago" />
+					<input
+						class="form-submit"
+						type="submit"
+						value="Confirmar pago"
+						disabled
+					/>
 				</fieldset>
 				<p class="form-advice">Verificas que esta información es correcta</p>
 			</form>
 		</div>
+		<script src="./js/main.js" type="module"></script>
 	</body>
 </html>
